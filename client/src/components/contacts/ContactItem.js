@@ -3,20 +3,20 @@ import PropTypes from "prop-types";
 import _ from "lodash";
 import ContactContext from "../../context/contact/contactContext";
 
-const ContactItem = ({ contact }) => {
+const ContactItem = ({ contact, style }) => {
 	const contactContext = useContext(ContactContext);
 
 	const { deleteContact, setCurrent, clearCurrent } = contactContext;
 
-	const { id, name, email, phone, type } = contact;
+	const { _id, name, email, phone, type } = contact;
 
 	const onDelete = () => {
-		deleteContact(id);
+		deleteContact(_id);
 		clearCurrent();
 	};
 
 	return (
-		<div className="card bg-light">
+		<div style={style} className="card bg-light">
 			<h3 className="text-primary text-left">
 				{name}{" "}
 				<span

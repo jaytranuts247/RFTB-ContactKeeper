@@ -2,4 +2,3 @@
 	"mongoURI": "mongodb+srv://admin:UVZkgc7uBVPp7Gex@cluster0.cwnrk.mongodb.net/Users?retryWrites=true&w=majority",
 	"jwtSecret": "secret"
 }
-// mongodb+srv://admin:UVZkgc7uBVPp7Gex@cluster0.cwnrk.mongodb.net/Users
